@@ -17,5 +17,7 @@
 
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick{color:#fbc544!important}
 
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{background-color:#fbc544!important;}
+
 
 .tl-timeline .tl-attribution{background-color:#084771!important;}
