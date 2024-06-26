@@ -8,5 +8,7 @@
 }
 
 .tl-timenav {background-color:#a3b8bf!important;}
-.tl-menubar-button{bakground:rgba(119, 0, 0, .7);}
+.tl-menubar-button{bakground:rgba(119, 0, 0, .7)!important;}
+
+.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {color:#770000!important;}
 
