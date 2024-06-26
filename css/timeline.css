@@ -4,12 +4,9 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: 'PT Sans Narrow', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
+
 }
 
-.tl-timenav {background-color:#ff0000!important;}
+.tl-timenav {background-color:#a3b8bf!important;}
+.tl-menubar-button{bakground:rgba(119, 0, 0, .7);}
 
