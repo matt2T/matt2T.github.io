@@ -29,7 +29,8 @@
 
 .tl-timemarker.tl-timemarker .tl-timemarker-content-container{background-color:#084771!important; color:#fbc544!important;}
 
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{background-color:#fbc544!important; color:#000!important;}
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{background-color:#fbc544!important;}
+.tl-timemarker.tl-timemarker-active h2{color:#000!important;}
 
 
 .tl-timeline .tl-attribution{background-color:#084771!important;}
