@@ -10,7 +10,8 @@
 .tl-timenav {background-color:#a3b8bf!important;}
 .tl-menubar-button{background:rgba(119, 0, 0, .7)!important;}
 
-.tl-slide .tl-slide-scrollable-container {background-color:#CBCCCE!important;}
+.tl-slide .tl-slide-scrollable-container {background-color:#ffffff!important;}
+.tl-headline{background-color:#990000!important;}
 
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title, .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description, .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {color:#770000!important;}
 
