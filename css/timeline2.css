@@ -14,7 +14,7 @@
 .tl-headline{color:#fff!important;}
 .tl-slide .tl-slide-scrollable-container .tl-headline {color:#770000!important;}
 
-.tl-timeline .tl-headline-date, .tl-timeline h3.tl-headline-date {color:#084711!important;}
+.tl-timeline .tl-headline-date, .tl-timeline h3.tl-headline-date {color:#5d2263!important;}
 
 .tl-timeline p{color:#000!important;}
 
@@ -27,7 +27,7 @@
 
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick{color:#fbc544!important}
 
-.tl-timemarker.tl-timemarker .tl-timemarker-content-container{background-color:#084771!important; color:#fbc544!important;}
+.tl-timemarker.tl-timemarker .tl-timemarker-content-container{background-color:#770000!important; color:#fbc544!important;}
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{background-color:#fbc544!important;}
 .tl-timemarker.tl-timemarker-active h2{color:#000!important;}
