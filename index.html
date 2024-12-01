@@ -8,156 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+<link rel="stylesheet" href="css/main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/e12964a2c4.js" crossorigin="anonymous"></script>
 <!--- Header bg color is black | body is #333 dark gray-->
 
-<style>
 
-body{margin:0px; background-color:#253322; background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,99,5,0.9164040616246498) 100%); color:#fff;
-}  header{font-family:poppins; font-weight:bold; font-size:1.7em; background-color:#a20303; padding:20px; margin-bottom:80px;}
-
-#title{margin:0px; padding-left:20px;}
-article{display:block;}   
-#featureImageBG{opacity:0; float:right; padding:10px; width:350px; height:350px; display:block; background-image:url(images/northPoleBG.jpg); background-size:contain; background-repeat:no-repeat; overflow:visible; margin-left:10px; animation-name:bgAppear; animation-delay:.25s; animation-duration:.75s; animation-fill-mode:forwards; }
-#featureImage{overflow:visible;}
-#featureImage img{width:0px; animation-name:fly-in; animation-delay:1.2s; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
-
-#featureD{padding-bottom:75px; display: grid; grid-template-columns: 60% 40%}
-#featureD div:first-child{padding-right:25px;}
-#featureD a, button{display:block; background-color:#a20303; color:#ffffff; font-weight:bold; padding:10px; max-width:400px; border-radius:10px; text-decoration:none; text-align:center; border-bottom:dotted 1px #ffa500;}
-#featureD a:hover{background-color:#ffa500; color:#000;}
-
-  #content{width:80%; max-width:1020px; margin:auto; font-family:poppins; font-size:1.25em;}
-  .gallery{display: grid;  grid-template-columns: repeat(8, 1fr); grid-template-rows: auto; gap: 5px; max-width: 1000px;}
-  .gallery img{width:110px; height:180px; object-fit: cover; cursor:pointer; box-shadow:#000 1px 9px 19px;}
-  .gallery img:hover{border:dotted 1px #ccc; margin:-1px;}
-
-  #lightbox img {max-height:83%;}
-
-.row {display: none;}
-.selected {display: block;}
-
-footer{display:block; background-color:#000; color:#fff; font-family:poppins; text-align:center; padding:30px; margin-top:100px;}
-#icons a{text-decoration:none; display:inline-block; padding:10px; color:#fff;}
-#icons a:visited{color:#ccc}
-
-@keyframes fly-in{
-  from{opacity:0; width:0px; margin-left:0px; padding-top:150px; }
-  to {opacity:1; width:350px; margin-left:50px;}
-}
-
-
-@keyframes fly-in2{
-  from{opacity:0; width:0px; margin-left:0px; padding-top:150px; }
-  to {opacity:1; width:270px; margin-left:30px;}
-}
-
-@keyframes fly-in3{
-  from{opacity:0; width:0px; margin-left:0px; padding-top:150px; }
-  to {opacity:1; width:190px; margin-left:10px;}
-}
-
-
-@keyframes fly-in4{
-  from{opacity:0; width:0px; margin-left:0px; padding-top:150px; }
-  to {opacity:1; width:250px; margin-left:0px;}
-}
-
-
-@keyframes bgAppear{
-  from{opacity:0; margin-right:50px; transform:rotate(90deg);}
-  to{opacity:1; transform:rotate(0deg); }
-}
-
-
-#lightbox {
-  background: rgba(0,0,0,0.8);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.close, .prev, .next {
-  position: absolute;
-  cursor: pointer;
-  font-weight:bold;
-  font-size:28px;
-}
-
-.close {
-  right: 10px;
-  top: 10px;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-
-@media screen and (max-width: 1050px) {
-  #content{width:90%;}
-  .gallery{grid-template-columns:auto auto auto auto;}
-  .gallery img {width:100%;}
-  #featureImageBG{float:none; width:80%; margin:35px auto 0px auto; padding-top:10px;}
-  #featureImage img{animation-name:fly-in2;}
-  #featureD{padding-bottom:5px;}
-
-}
-
-
-@media screen and (max-width: 825px) {
-  
- 
-  #featureImage img{animation-name:fly-in3;}
-
- 
-}
-
-
-@media screen and (max-width: 550px) {
-  
-  #title{padding-left:0px; font-size:1.5em;}
-  #content{width:90%; }
-  .gallery{grid-template-columns:auto }
-  .gallery img:first-child{display:block; width:100%; height:300px;}
-  .gallery img {display:none;}
-
-  #featureD{display:block; padding-bottom:20px;}
-  #featureD div:first-child{padding-right:0px;}
-  #featureImage img{animation-name:fly-in;}
-
-  #featureImageBG{float:none; width:80%; margin:50px auto 0px auto; padding-top:50px;}
-  button{display:none;}
-}
-
-@media screen and (max-width: 450px) {
- 
-#content{width:90%;}
-header{margin-bottom:0px;}
-  #featureD{display:block; padding-bottom:0px;}
-  #featureImage img{animation-name:fly-in4; animation-delay:3s; animation-duration-3s;}
-
-  #featureImageBG{float:none; width:70%; margin:20px auto -70px auto; }
-}
-
-
-</style>
 
 
 <script>
+
+
+
 $(document).ready(function(){
   $("button").click(function(){
     $(".two").toggleClass("selected");
@@ -229,9 +93,16 @@ $(function(){
 
 </head>
 <body>
-<header><h1 id="title">Mattrocious</h1></header>
+<header>
+
+  <h1 id="title">Mattrocious</h1>
+</header>
 
 <section id="content">
+
+
+<div id="radioWidget"> <iframe name="iheart" allow="autoplay" width="80%" height="100" src="https://www.iheart.com/live/iheart-christmas-classics-6137/?embed=true" frameborder="0"></iframe></div>
+
   
   <article id="featureD">
     
@@ -247,11 +118,17 @@ $(function(){
     <a href="https://photos.app.goo.gl/3N269cfhxffQm8Fe8" target="_blank" alt="Album Page @ Google Photos">Enjoy this seasonal sampler.</a><span style="font-size:.6em; font-style:italic;">Link goes to album page at Google Photos</span>
 
 
+
+
+
   </div>
 
 <div id="featureImageBG">
 
     <div id="featureImage"><img src="images/penguinSki.png"></div>
+
+
+
    </div>
 
   </article>
@@ -323,6 +200,9 @@ $(function(){
   <div class="next">&gt;</div>
   <img src="#">
 </div>
+
+
+
 
 
 <footer>All artwork by Matt Thompson | For display only. | Please, no unauthorized duplication, editing or AI training of artwork.
