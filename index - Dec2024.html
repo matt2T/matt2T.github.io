@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Matt Thompson Art : Mattrocious">
+  <meta name="keywords" content="art, portfolio, clip, studio, digital, illustrations,">
+  <meta name="author" content="Matt Thompson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e12964a2c4.js" crossorigin="anonymous"></script>
+<!--- Header bg color is black | body is #333 dark gray-->
+
+
+
+
+<script>
+
+
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".two").toggleClass("selected");
+    const row = $(".row");
+     if ($(this).text() === "View All") {
+        $(this).text("View Less");
+        } else {
+        $(this).text("View All");
+      }
+      
+
+  });
+
+});
+
+
+</script>
+
+
+
+<script>
+
+$(function(){
+  
+  // Lightbox function
+  var lightbox = function(){
+    var src = $('.active').attr('src');
+    $('#lightbox img').attr('src', src);
+  }
+
+  // Image is clicked
+  $('.gallery img').click(function(){
+    $('#lightbox').css('display','flex');
+    $(this).addClass('active');
+    lightbox();
+  });
+
+  // Close button clicked
+  $('.close').click(function(){
+    $('img').removeClass('active');
+    $('#lightbox').hide();
+  });
+
+  // Next button clicked
+  $('.next').click(function(){
+    if( $('.active').parent('.gallery').children('img:last').hasClass('active') ) {
+      $('.active').removeClass('active').parent('.gallery').children('img:first').addClass('active');
+      lightbox();
+    } else {
+      $('.active').removeClass('active').next('img').addClass('active');
+      lightbox();
+    }
+  });
+  
+  // Prev button clicked
+  $('.prev').click(function(){
+    if( $('.active').parent('.gallery').children('img:first').hasClass('active') ) {
+      $('.active').removeClass('active').parent('.gallery').children('img:last').addClass('active');
+      lightbox();
+    } else {
+      $('.active').removeClass('active').prev('img').addClass('active');
+      lightbox();
+    }
+  });
+  
+});
+
+</script>
+
+</head>
+<body>
+<header>
+
+  <h1 id="title">Mattrocious</h1>
+</header>
+
+<section id="content">
+
+
+<div id="radioWidget"> <iframe name="iheart" allow="autoplay" width="80%" height="100" src="https://www.iheart.com/live/iheart-christmas-classics-6137/?embed=true" frameborder="0"></iframe></div>
+
+  
+  <article id="featureD">
+    
+   <div>
+
+<h2>Holidays Past and Present</h2>
+<p>Whether it’s on the computer or with colored pencils and inks, creating Christmas art is one of the most meaningful gifts. Who doesn’t love Santa, the festive red and green, and the wonder of the season? Even more beautiful is the celebration of the Gospel—the angels' announcement, shepherds in awe, and wise men journeying from afar. Wishing everyone a joyous holiday season and a very Merry Christmas!</p>
+
+   <!--<h2>November</h2>
+    <p>We have arrived at the vortex between marketable holidays. A choice of pumpkin and cinnamon, candy and cookies and giving thanks and getting discounted electronics. At the center of it all is a plump, juicy, turkey. Let us give thanks and chill. </p>--> 
+
+
+    <a href="https://photos.app.goo.gl/3N269cfhxffQm8Fe8" target="_blank" alt="Album Page @ Google Photos">Enjoy this seasonal sampler.</a><span style="font-size:.6em; font-style:italic;">Link goes to album page at Google Photos</span>
+
+
+
+
+
+  </div>
+
+<div id="featureImageBG">
+
+    <div id="featureImage"><img src="images/penguinSki.png"></div>
+
+
+
+   </div>
+
+  </article>
+
+<h2>2024: Latest Not Greatest</h2>
+  <article class="gallery" id="2024">
+  
+   
+     <img src="images/frostyBeach.jpg">
+    <img src="images/christmasCondo.jpg">
+<img src="images/santaSleigh.jpg">
+<img src="images/reindeer.jpg">
+<img src="images/Christmas24-1.JPG">
+<img src="images/Christmas24-2.JPG">
+ <img src="images/ChristmasHumidity.jpg">
+<img src="images/christmasPac.jpg">
+
+
+
+<img class="row two" src="images/christmasCammy.jpg">
+<img class="row two" src="images/ChristmasBlanka.jpg">
+<img class="row two" src="images/ChristmasKen.jpg">
+
+<img class="row two" src="images/Christmas24-Santa.jpg">
+
+<img class="row two" src="images/Christmas24-Elf.JPG">
+
+<img class="row two" src="images/stickers1.jpg">
+<!--<img class="row two"src="images/stickers2.jpg">-->
+<!--<img class="row two" src="images/stickers3.jpg">-->
+<img class="row two" src="images/peruvianLady.jpg">
+<img class="row two" src="images/roaringBear.jpg">
+<!--<img class="row two" src="images/japaneseActor.JPG">-->
+<!--<img class="row two" src="images/landShark.jpg">-->
+<!--<img class="row two" src="images/Cardinal.JPG">-->
+<img class="row two" src="images/antiqueCar.jpg">
+<!--<img class="row two" src="images/bwSketchCity.jpg">-->
+<!--<img class="row two" src="images/hellfire.JPG">-->
+
+</article>
+<button id="viewAll">View All</button>
+
+<h2>2024: Dick Tracy</h2>
+  <article class="gallery" id="DickTracy">
+
+<img src="images/dt1.JPG">
+<img src="images/dt2.JPG">
+<img src="images/dt3.JPG">
+<img src="images/dt4.JPG">
+<img src="images/dt5.JPG">
+<img src="images/dt6.JPG">
+<img src="images/dt7.JPG">
+<img src="images/dt8.JPG">
+
+</article>
+
+<h2>2023-24: Space</h2>
+  <article class="gallery" id="DickTracy">
+
+<img src="images/starCanyon.jpg">
+<img src="images/spaceMarine.JPG">
+<img src="images/spaceFighter.JPG">
+<img src="images/spaceMars.JPG">
+<img src="images/spaceRock.JPG">
+<img src="images/space2ships.JPG">
+<img src="images/spaceElevator.JPG">
+<img src="images/spaceDorothy.JPG">
+
+</article>
+
+</section>
+
+
+<div id="lightbox">
+  <div class="close">x</div>
+  <div class="prev">&lt;</div>
+  <div class="next">&gt;</div>
+  <img src="#">
+</div>
+
+
+
+
+
+<footer>All artwork by Matt Thompson | For display only. | Please, no unauthorized duplication, editing or AI training of artwork.
+  <div id="icons">
+<a title="Follow on Facebook" href="https://www.facebook.com/mattthompsonart/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a title="Follow on Pinterest" href="https://www.pinterest.com/mtcomdesign/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+<a title="Follow on Giphy" href="https://giphy.com/channel/mattrocious" target="_blank"><i class="fa-solid fa-spaghetti-monster-flying"></i></a>
+<a title="Watch Videos" href="https://www.youtube.com/@totshirts/playlists" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+ </footer>
+
+
+
+
+
+</body>
+
+
+
+</html>

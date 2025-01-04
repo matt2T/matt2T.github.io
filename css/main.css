@@ -1,10 +1,13 @@
 
-body{margin:0px; background-color:#253322; background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,99,5,0.9164040616246498) 100%); color:#fff;
-}  header{font-family:poppins; font-weight:bold; font-size:1.7em; background-color:#a20303; padding:20px; margin-bottom:80px; position:relative;}
+body{margin:0px; background-color:#4EA3E5; background: linear-gradient(180deg, rgba(81,81,81,1) 13%, rgba(125,185,232,0.9164040616246498) 100%); color:#fff;}
+header{font-family:poppins; font-weight:bold; font-size:1.7em; background-color:#000000; padding:20px; margin-bottom:80px; position:relative;}
+/*-xmas-body{margin:0px; background-color:#253322; background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(0,99,5,0.9164040616246498) 100%); color:#fff;}*/
+/*-xmas-header{font-family:poppins; font-weight:bold; font-size:1.7em; background-color:#a20303; padding:20px; margin-bottom:80px; position:relative;}*/
 
 #title{margin:0px; padding-left:20px; width:50%}
 article{display:block;}   
-#featureImageBG{opacity:0; float:right; padding:10px; width:350px; height:350px; display:block; background-image:url(../images/northPoleBG.jpg); background-size:contain; background-repeat:no-repeat; overflow:visible; margin-left:10px; animation-name:bgAppear; animation-delay:.25s; animation-duration:.75s; animation-fill-mode:forwards; }
+#featureImageBG{opacity:0; float:right; padding:10px; width:350px; height:350px; display:block; background-image:url(../images/boom-bg.jpg); background-size:contain; background-repeat:no-repeat; overflow:visible; margin-left:10px; animation-name:bgAppear; animation-delay:.25s; animation-duration:.75s; animation-fill-mode:forwards; }
+/*-xmas-#featureImageBG{opacity:0; float:right; padding:10px; width:350px; height:350px; display:block; background-image:url(../images/northPoleBG.jpg); background-size:contain; background-repeat:no-repeat; overflow:visible; margin-left:10px; animation-name:bgAppear; animation-delay:.25s; animation-duration:.75s; animation-fill-mode:forwards; }*/
 #featureImage{overflow:visible;}
 #featureImage img{width:0px; animation-name:fly-in; animation-delay:1.2s; animation-duration:1.5s; animation-fill-mode:forwards; animation-timing-function:ease-out;}
 
