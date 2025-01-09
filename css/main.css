@@ -151,3 +151,10 @@ header{margin-bottom:0px;}
 }
 
 
+/*Shhh*/
+.bigRedButton{
+color:#fff; background: rgb(215,19,37);
+background: linear-gradient(0deg, rgba(215,19,37,1) 13%, rgba(99,0,0,1) 100%); padding:10px; border-radius:10px; border:solid 1px #990000; text-decoration:none;}
+
+.bigRedButton:hover{background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(99,0,0,1) 100%);}
