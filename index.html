@@ -23,7 +23,7 @@
 
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#view24").click(function(){
     $(".two").toggleClass("selected");
     const row = $(".row");
      if ($(this).text() === "View All") {
@@ -36,6 +36,23 @@ $(document).ready(function(){
 
 
   });
+
+
+  $("#view25").click(function(){
+    $(".two25").toggleClass("selected");
+    const row = $(".row");
+     if ($(this).text() === "View All") {
+        $(this).text("View Less");
+        } else {
+        $(this).text("View All");
+      }
+      
+
+
+
+  });
+
+
 
 });
 
@@ -135,6 +152,7 @@ $(function(){
 
 <h2>2025: Latest Not Greatest </h2>
   <article class="gallery" id="2025">
+<img src="images/feb13Rose.jpg">   
 <img src="images/theMasses.jpg">   
 <img src="images/Sonic25.jpg">
 <img src="images/WelcometotheGulf-2.jpg">
@@ -142,13 +160,13 @@ $(function(){
 <img src="images/hourglassweb.jpg">
 <img src="images/monarch25.jpg">
 <img src="images/MusketeerMouse.jpg">
-<img src="images/Toad-Horse.jpg">
+<img class="row two25" src="images/Toad-Horse.jpg">
 
 
 
 
 </article>
-
+<button id="view25">View All</button>
 
 <h2>2024: A Year in Doodles </h2>
   <article class="gallery" id="2024">
@@ -183,7 +201,7 @@ $(function(){
 
 
 </article>
-<button id="viewAll">View All</button>
+<button id="view24">View All</button>
 
 <h2>2024: Dick Tracy</h2>
   <article class="gallery" id="DickTracy">
