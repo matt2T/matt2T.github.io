@@ -1,0 +1,42 @@
+
+a {text-decoration:none; color:#fff;}
+
+section{margin:auto; display:block;  text-align:center;}
+
+.slider {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+   text-align:left;
+    background-color:#333;
+    margin:auto;
+ 
+
+}
+
+.slides {
+    display: flex;
+    width: 1200px; /* Adjust based on the number of images */
+    transition: transform 0.5s ease-in-out;
+  
+}
+
+.slides img {
+    width: 400px;
+    height: 400px;
+    object-fit:contain;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin:auto;
+    top:-250px;
+    z-index: 1000;
+    display:inline;
+
+}
+    
+
+    

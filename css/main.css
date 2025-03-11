@@ -13,8 +13,8 @@ article{display:block;}
 
 #featureD{padding-bottom:75px; display: grid; grid-template-columns: 60% 40%}
 #featureD div:first-child{padding-right:25px;}
-#featureD a, button{display:block; background-color:#a20303; color:#ffffff; font-weight:bold; padding:10px; max-width:400px; border-radius:10px; text-decoration:none; text-align:center; border-bottom:dotted 1px #ffa500;}
-#featureD a:hover{background-color:#ffa500; color:#000;}
+#featureD a, button{display:block; background-color:#000; color:#fff; font-weight:bold; padding:10px; max-width:400px; border-radius:10px; text-decoration:none; text-align:center; border-bottom:dotted 1px #ffa500;}
+#featureD a:hover{background-color:#ffa500;; color:#000;}
 
   #content{width:80%; max-width:1020px; margin:auto; font-family:poppins; font-size:1.25em;}
   .gallery{display: grid;  grid-template-columns: repeat(8, 1fr); grid-template-rows: auto; gap: 5px; max-width: 1000px;}
@@ -30,11 +30,13 @@ footer{display:block; background-color:#000; color:#fff; font-family:poppins; te
 #icons a{text-decoration:none; display:inline-block; padding:10px; color:#fff;}
 #icons a:visited{color:#ccc}
 
-#radioWidget {width:350px; position:absolute; top:10px; right:10px; opacity:.75;}
+#radioWidget, {width:350px; position:absolute; top:10px; right:10px; opacity:.75;}
 #radioWidget:hover {opacity:1;}
 #radioWidget:hover {opacity:85;}
 
+nav {width:350px; position:absolute; top:40px; right:0px; display:block; padding:10px;  }
 
+nav a{font-family:poppins;font-weight:bold; color:#fff; text-decoration:none; color:#ccc;}
 
 @keyframes fly-in{
   from{opacity:0; width:0px; margin-left:0px; padding-top:150px; }
@@ -114,8 +116,8 @@ footer{display:block; background-color:#000; color:#fff; font-family:poppins; te
   
  
   #featureImage img{animation-name:fly-in3;}
-#radioWidget {width:310px; position:relative; top:20px; right:0px;}
- 
+#radioWidget, {width:310px; position:relative; top:20px; right:0px;}
+nav{top:60px;}
 }
 
 
