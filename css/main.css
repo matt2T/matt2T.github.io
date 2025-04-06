@@ -13,8 +13,8 @@ article{display:block;}
 
 #featureD{padding-bottom:75px; display: grid; grid-template-columns: 60% 40%}
 #featureD div:first-child{padding-right:25px;}
-#featureD a, button{display:block; background-color:#000; color:#fff; font-weight:bold; margin:20px auto; padding:10px; max-width:400px; border-radius:10px; text-decoration:none; text-align:center; border-bottom:dotted 1px #ffa500;}
-#featureD a:hover{background-color:#ffa500;; color:#000;}
+#featureD a, button{display:inline-block; background-color:#000; color:#fff; font-weight:bold; margin:20px auto; padding:10px; max-width:400px; border-radius:10px; text-decoration:none; text-align:center; border-bottom:dotted 1px #ffa500;}
+#featureD a:hover, button:hover{background-color:#ffa500;; color:#000;}
 
   .content{width:80%; max-width:1020px; margin:auto; font-family:poppins; font-size:1.25em;}
   .gallery{display: grid;  grid-template-columns: repeat(8, 1fr); grid-template-rows: auto; gap: 5px; max-width: 1000px;}
@@ -22,7 +22,7 @@ article{display:block;}
   .gallery img:hover{border:dotted 1px #ccc; margin:4px;}
 
 .archive{display:none;}
-
+.past {display:none;}
 
   #lightbox img {max-height:83%;}
 

@@ -22,8 +22,17 @@
 <script>
 
 
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+ };
 
-$(document).ready(function(){
+
+
+
+$(document).ready(function()
+
+{
   $("#view24").click(function(){
     $(".two").toggleClass("selected");
     const row = $(".row");
@@ -57,10 +66,25 @@ $(document).ready(function(){
     
  $(".archive").toggleClass("selected");
     const row = $(".row");
-     if ($(this).text() === "View Archive") {
-        $(this).text("Hide Archive");
+     if ($(this).text() === "View 2024 Art") {
+        $(this).text("Hide 2024 Art");
+         scrollToAnchor('spot24');
         } else {
-        $(this).text("View Archive");
+        $(this).text("View 2024 Art");
+      }
+
+
+  });
+
+    $("#viewPast").click(function() {
+    
+ $(".past").toggleClass("selected");
+    const row = $(".row");
+     if ($(this).text() === "View Past Works") {
+        $(this).text("Hide Past Works");
+         scrollToAnchor('spotPast');
+        } else {
+        $(this).text("View Past Works");
       }
 
 
@@ -191,6 +215,7 @@ $(function(){
 
 <h2>2025: Fanzone </h2>
   <article class="gallery" id="2025">
+    <img src="images/Galactus.jpg" alt="fantastic four fan artwork by Matt Thompson">
     <img src="images/Thing.jpg" alt="fantastic four fan artwork by Matt Thompson">
 <img src="images/johnnyStorm.jpg" alt="fantastic four fan artwork by Matt Thompson">     
 <img src="images/reedRichards.jpg" alt="fantastic four fan artwork by Matt Thompson">    
@@ -205,20 +230,22 @@ $(function(){
 
 </section>
 
-
+<br>
 <br>
 
 <hr>
 
 <br>
 
-<div style="width: auto; margin:auto; text-align:center;"><button aria-label="more images" id="viewArchive">View Archive</button></div>
+<div style="width: auto; margin:auto; text-align:center;"><button aria-label="more images" id="viewArchive">View 2024 Art</button></div>
+<br>
+<hr>
 
 <div class="archive">
  <section class="content" id="twentyFour"> 
 
 
-
+<a name="spot24">&nbsp;</a>
 <h2>2024: A Year in Doodles </h2>
   <article class="gallery" id="2024">
    
@@ -281,11 +308,78 @@ $(function(){
 <img src="images/spaceDorothy.JPG" alt="dorothy in space artwork by Matt Thompson">
 
 </article>
-
 </div>
+</section>
+
+
+<br>
+<hr>
+ <br> 
+ <div style="width: auto; margin:auto; text-align:center;"> <button aria-label="more images" id="viewPast">View Past Works</button></div>
+<br>
+<hr>
+
+
+
+
+<div class="past">
+ <section class="content" id="favorites"> 
+
+<a name="spotPast">&nbsp;</a>
+<h2>Archive</h2>
+<h3>Digital Pen</h3>
+  <article class="gallery">
+
+
+<img src="images/favorites/MoonWeeds.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/Bernadette.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/nightPalm.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/dolphin.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/Winter.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/strangeCoast.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/orange.jpg" alt="artwork by Matt Thompson">
+</article>
+
+<h3>Ink, Pen & Pencil</h3>
+ <article class="gallery">
+<img src="images/favorites/cpencil-Easter.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/cpencil-panda.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/mk-dino.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/mk-sci-fi.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/mk-autumn.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/mk-popBlock.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/bw-waterfall.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/bw-mooncastle.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-Oak.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-tree.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-eyes.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-ship.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-ladyWait.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-wave.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/pencil-balerina.jpg" alt="artwork by Matt Thompson">
+</article>
+<h3>Vector (w/Computer Mouse)</h3>
+ <article class="gallery">
+
+<img src="images/favorites/Montalban_web.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/Cardinal.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/autumnEvening.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/dayDreaming_masked_web.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/deadwood_Sample.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/Owl_Top_hat.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/rooftop.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/SpringLightv2.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/underwater.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/WaltherPPK.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/waterGlass.jpg" alt="artwork by Matt Thompson">
+<img src="images/favorites/winterOwl.jpg" alt="artwork by Matt Thompson">
+</div>
+
+</article>
 
 </section>
 
+</div>
 
 <div id="lightbox">
   <div aria-label="close image slider" class="close">x</div>
