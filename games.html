@@ -60,6 +60,17 @@ $(document).ready(function() {
     });
  
 
+ $('#pacman').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/s6ozWUOMiwo?si=GdPFDoBFVTBPapl9&amp;start=290');
+    });
+           
+            $('#msPacman').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/S3MqVgWRbGg?si=nRgwvi27QOzelS2b&amp;start=567');
+    });
+
+ $('#superPacman').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/L8kwGnVBZJU?si=EamL1yf55wA4hNYS');
+    });
 
 
    });
@@ -72,8 +83,12 @@ $(document).ready(function() {
 </script>
 
 <style>
-.game{display:inline-block; padding:10px; margin:5px; cursor:pointer; font-weight:bold; font-family:arial; background-color:#000; border-radius:10px;}
-.active{background-color:#ff0000;}
+#gameIntro{width:80%; margin:30px auto 20px ; text-align:left; font-family:arial; font-size:15px; line-height:25px; color:#fff; background-color:rgba(32, 69, 89, 0.7); border-radius:10px; padding:10px; }
+.tvController{margin:0px; padding:0px;}
+.game{display:inline-block; padding:10px; margin:25px 10px 5px; cursor:pointer; font-weight:bold; font-family:arial; background-color:#000; border-radius:10px;}
+.game:hover{background-color:#ff0000;}
+.active{background-color:#cc0000;}
+
 </style>
 
 </head>
@@ -86,9 +101,8 @@ $(document).ready(function() {
 
 <section>
 
-
 <div class="tvBox">
-<iframe id="gameTV" width="900" height="506.25" src="https://www.youtube.com/embed/8owzQzp1oD8?si=VECXb7P2EVHqBnxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<iframe id="gameTV" width="900" height="506.25" src="https://www.youtube.com/embed/s6ozWUOMiwo?si=GdPFDoBFVTBPapl9?&autoplay=1&mute=1&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 <ul class="tvController">
 <li id="bubble" class="game">Bubble Bobble</li>
 <li id ="burger" class="game">Burger Time</li>
@@ -96,13 +110,24 @@ $(document).ready(function() {
 <li id ="frogger" class="game">Frogger</li>
 <li id ="mappy" class="game">Mappy</li>
 <li id="qbert" class="game">Q-Bert</li>
-<li id="invaders" class="game active">Space Invaders</li>
+<li id="invaders" class="game">Space Invaders</li>
 
+<li id="pacman" class="game active">Pac-Man</li>
+  <li id="msPacman" class="game">Ms. Pac-Man</li>
+  <li id="superPacman" class="game">Super Pac-Man</li>  
+</ul>
 </div>
 
 
 
+<div id="gameIntro">
+<p><b>Welcome to the Arcade</b> — a place where, for generations, people have willingly traded their quarters, their time, and even their pride just to feel the sting of defeat and the siren call of that coveted maching in the cabinet: <i>"Try again."</i> I like to think back on those glory days when I once ruled… <i>but who am I kidding? <b>I’ve always sucked at these games.</b> Most of us do</i>.
+And that’s exactly why they’re so great. </p>
 
+<p>These videos showcase PS4 ports of the original arcade versions of the games (Arcade Archives series and NAMCO Museum collections). They are not the toned-down home console versions that I kind of wish they were...<i>I die a lot</i>. Many of these titles are also available online through platforms like Steam, the Internet Archive, and various emulation websites. <a class="game" href="https://www.youtube.com/playables" target="_blank">You can play a far more forgiving and modern upgrade of Pac-Man on YouTube Playables.</a>
+
+
+</p></div>
 
 
 </section>
