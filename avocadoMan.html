@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="googlebot" content="noindex">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/comics.css">
+  <link rel="stylesheet" href="css/ariaBalloons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e12964a2c4.js" crossorigin="anonymous"></script>
+<!--- Header bg color is black | body is #333 dark gray-->
+
+
+<script>
+
+
+
+  $(document).on('click', 'ul li', function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    });
+
+$(document).ready(function() {
+    $('#e1').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/6434pl7I0R0?si=5c1uQbUN_-gPZe9j');
+    });
+
+  $('#e2').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/0LhD_ADnGQc?si=1YrJzM2olhhy54T');
+    });
+
+    $('#e3').click(function() {
+      $('#gameTV').attr('src', 'https://www.youtube.com/embed/-oPWAXzlRN8?si=uV35g9QZ7cs1whXT');
+    
+    });
+
+     });
+
+</script>
+
+</head>
+<body>
+<header>
+
+   <h1 id="title"><a href="index.html" alt="Back to Home" title="Back to Home">Mattrocious</a></h1>
+</header>
+
+<section class="content">
+
+<h2 style="text-align:left;">Avocado Man</h2>
+
+<div class="tvBox">
+<iframe id="gameTV" style="width:100%; "height="506.25" src="https://www.youtube.com/embed/6434pl7I0R0?si=5c1uQbUN_-gPZe9j" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<ul class="tvController">
+<li id="e1" class="game active">Episode I</li>
+<li id ="e2" class="game">Episode II</li>
+<li id="e3" class="game">Episode III</li>
+ 
+</ul>
+</div>
+
+
+<div id="a-shell" style="display:grid; text-align:left;  max-width: 100%; grid-template-columns:75% 25%; background-color:#072909; border-radius:10px; padding:15px; margin-top:15px;">
+ <div><p>In the year 2002, an aspiring web animator set out to craft a galaxy filled with humor and excitement.</p>
+<p>What he ended up with? Three short animated episodes—born in a now-extinct tech, resurrected and preserved in the infinite archives of YouTube.</p>
+<p>And now, lucky you! You get to witness a slice of that cosmic cartoon history.</p>
+
+
+
+
+ </div> 
+<div><img style="max-width:80%; padding:10px 10px 10px 20px;" id="aman1" src="images/avocadoManPoster.jpg"></div>
+</div>
+
+
+
+  </section>
+
+
+
+
+
+
+<footer>All artwork by Matt Thompson | For display only. | Please, no unauthorized duplication, editing or AI training of artwork.
+  <div id="icons">
+<a title="Follow on Facebook" href="https://www.facebook.com/mattthompsonart/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a title="Follow on Pinterest" href="https://www.pinterest.com/mtcomdesign/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+<a title="Follow on Giphy" href="https://giphy.com/channel/mattrocious" target="_blank"><i class="fa-solid fa-spaghetti-monster-flying"></i></a>
+<a title="Watch Videos" href="https://www.youtube.com/@totshirts/playlists" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+ </footer>
+
+
+
+
+
+</body>
+
+
+
+</html>
