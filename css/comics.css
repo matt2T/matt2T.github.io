@@ -4,8 +4,8 @@ a {text-decoration:none; color:#fff;}
 section{margin:auto; display:block;  text-align:center;}
 
 .slider {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     overflow: hidden;
    text-align:left;
     background-color:#333;
