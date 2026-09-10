@@ -76,7 +76,15 @@ margin-bottom:30px;
 .hide{display:none;}
 .show{display:block;}
 
+.splash{width:350px; height:400px; background-image:url('animeCovers/Ryoko.webp'); background-repeat:no-repeat; background-size:contain; position:absolute; z-index:5000; right:0px; opacity:0; animation-name:hiya; animation-duration:5s; animation-delay:1.5s;}
 
+@keyframes hiya {
+  0%   {right:0px; top:0px; opacity:.2;}
+  25%  {right:200px; top:0px; opacity:1;}
+  50%  {right:250px; top:0px;}
+  75%  {right:200px; top:0px; opacity:1;}
+  100% {right:0px; top:0px; opacity:0;}
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -92,6 +100,10 @@ margin-bottom:30px;
 
 </head>
 <body>
+
+
+<div class="splash">&nbsp;</div>
+
 
 <header>
 
