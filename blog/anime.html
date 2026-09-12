@@ -25,6 +25,27 @@ $('.preview').on('mouseenter mouseleave', function() {
 	$(this).siblings('.ecchiBlock').toggleClass('show');
 });
 
+
+    // 1. List your background image URLs in an array
+    var images = [
+        'animeCovers/bebopEd.webp',
+		'animeCovers/Ryoko.webp'
+        
+    ];
+
+    // 2. Pick a random index based on the array length
+    var randomIndex = Math.floor(Math.random() * images.length);
+    var selectedImage = images[randomIndex];
+
+    // 3. Apply the random image to the target element
+    $('.splash').css({
+        'background-image': 'url(' + selectedImage + ')',
+        'background-size': 'cover',
+        'background-position': 'center',
+        'background-repeat': 'no-repeat'
+    });
+
+
 });
 
 </script>
@@ -76,7 +97,7 @@ margin-bottom:30px;
 .hide{display:none;}
 .show{display:block;}
 
-.splash{width:350px; height:400px; background-image:url('animeCovers/Ryoko.webp'); background-repeat:no-repeat; background-size:contain; position:absolute; z-index:5000; right:0px; opacity:0; animation-name:hiya; animation-duration:5s; animation-delay:1.5s;}
+.splash{width:350px; height:400px; background-repeat:no-repeat; background-size:contain; position:absolute; z-index:5000; right:0px; opacity:0; animation-name:hiya; animation-duration:5s; animation-delay:1.5s;}
 
 @keyframes hiya {
   0%   {right:0px; top:0px; opacity:.2;}
