@@ -28,8 +28,10 @@ $('.preview').on('mouseenter mouseleave', function() {
 
     // 1. List your background image URLs in an array
     var images = [
-        'animeCovers/bebopEd.webp',
-		'animeCovers/Ryoko.webp'
+        'animeCovers/dorothy.webp',
+		'animeCovers/bebopEd.webp',
+		'animeCovers/Ryoko.webp',
+		'animeCovers/turboGranny.webp',
         
     ];
 
@@ -40,7 +42,7 @@ $('.preview').on('mouseenter mouseleave', function() {
     // 3. Apply the random image to the target element
     $('.splash').css({
         'background-image': 'url(' + selectedImage + ')',
-        'background-size': 'cover',
+        'background-size': 'contain',
         'background-position': 'center',
         'background-repeat': 'no-repeat'
     });
@@ -84,7 +86,6 @@ margin-bottom:30px;
 }
 
 
-
 .poster img{object-fit:contain; height:240px;}
 .title, .ranking {font-weight:bold; font-size:23px;}
 .ranking{margin-bottom:6px;}
@@ -97,13 +98,13 @@ margin-bottom:30px;
 .hide{display:none;}
 .show{display:block;}
 
-.splash{width:350px; height:400px; background-repeat:no-repeat; background-size:contain; position:absolute; z-index:5000; right:0px; opacity:0; animation-name:hiya; animation-duration:5s; animation-delay:1.5s;}
+.splash{width:350px; height:400px; position:absolute; z-index:5000; right:0px; opacity:0; animation-name:hiya; animation-duration:5s; animation-delay:1.5s;}
 
 @keyframes hiya {
   0%   {right:0px; top:0px; opacity:.2;}
-  25%  {right:200px; top:0px; opacity:1;}
-  50%  {right:250px; top:0px;}
-  75%  {right:200px; top:0px; opacity:1;}
+  25%  {right:200px; top:50px; opacity:1;}
+  50%  {right:250px; top:50px;}
+  75%  {right:200px; top:50px; opacity:1;}
   100% {right:0px; top:0px; opacity:0;}
 }
 
@@ -133,10 +134,28 @@ margin-bottom:30px;
 
 <section id="intro">
 
-<p>Yes, anime is bizarre! It is also a lot more fun than most of the live-action muck that passes for modern entertainment.</p>
-<p><i> Caution:</i> Some of the previews may contain partial nudity, suggestive themes, cultural oddities and warped takes on Western-icons and religion. Most of it is played for cartoonish silliness, with heroes, villains, and plenty of over-the-top nonsense. Cartoonish but not for young children, obviously. PG-13 and Up. So if you come across this page: 警告しておきます</p>
+<p>Anime is weird. Filled with odd characters. Heroes who are worse than monsters, and demons who turn out to be...the good guys? Apparently, it is also a creepy medium that allows adult animators to obsess over high school life and the girl who got away.
 
-<p>Clips and previews are sourced from YouTube.</p>
+Yes, there’s a lot of violence, but in most cases...nobody really dies. They just get a change of address and a new occupation as an overpowered adventurer, merchant or pharmacist.</p>
+
+<p>
+And furries. Lots and LOTS of furries. Sigh.</p>
+<p>
+
+Entertainment has come to this. Oh well...I kind of like it.
+
+Actually its great! I'm 50 years old and I'm still sitting here watching cartoons.
+
+Take THAT, adulting!
+
+You can have your mortgage, your taxes and your 401(k).
+
+I have anime.
+
+</p>
+<p style="font-size:12px; font-style:italic;"><strong> Caution:</strong> Some of the previews may contain partial nudity and suggestive themes. PG-13 and Up. So if you come across this page: 警告しておきます</p>
+
+<p style="font-size:10px;">Clips and previews are sourced from YouTube.</p>
 
 </section>
 
@@ -146,6 +165,13 @@ margin-bottom:30px;
 
 <div class="animeList">
 
+
+<div class="anime">
+<div class="ranking">👍👌</div>
+<div class="poster"><img src="animeCovers/duo.jpg"></div>
+<div class="title">Absolute Duo</div>
+<div class="preview"> <a href="https://www.youtube.com/watch?v=DoJnys2pmPw" target="_blank" alt="Play Preview">&#9654; Preview</a></div>
+</div>
 
 
 
@@ -158,7 +184,6 @@ margin-bottom:30px;
 
 
 
-
 <div class="anime">
 <div class="ranking">👌👌</div>
 <div class="poster"><img src="animeCovers/banished.jpg"></div>
@@ -166,6 +191,13 @@ margin-bottom:30px;
 <div class="preview"> <a href="https://www.youtube.com/watch?v=62bFd4bZoic" target="_blank" alt="Play Preview">&#9654; Preview</a></div>
 </div>
 
+<div class="anime">
+<div class="ranking">👍👌</div>
+<div class="poster"><img src="animeCovers/barb.webp"></div>
+<div class="title">The Barbarian's Bride</div>
+<div class="preview"> <a href="https://youtu.be/ya7Jva6AU6U?si=0rChaTVvDWS4k79e" target="_blank" alt="Play Preview">&#9654; Preview</a></div>
+<div class="ecchiBlock hide">&nbsp;</div>
+</div>
 
 
 
